@@ -1,4 +1,4 @@
-// scripts.js
+a// scripts.js
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         //alert('Login successful!');
         // Redirect to another page or perform further actions
         // Redirect to a new page on successful login
-        window.location.href = 'Screen2.html';
+        window.location.href = 'acreen2.html';
     } else {
         errorMessage.textContent = 'Invalid username or password.';
     }
