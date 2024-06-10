@@ -1,4 +1,4 @@
-a// scripts.js
+// scripts.js
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
