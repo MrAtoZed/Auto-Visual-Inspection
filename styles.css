@@ -2,7 +2,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('coffe.jpg') no-repeat center center fixed;
+    background-image: url('coffe.jpg'); 
+    backgorund-repeat: no-repeat center;
+    background-position: center; 
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
