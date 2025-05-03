@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIEW TXT FILE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10;
+            border-radius: 8px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head> 
+<body>
+    <h1>TXT File Content</h1>
+    <pre id="fileContent">Loading File...</pre>
+
+    <script>
+        fetch('data.txt')//nama file txt
+        .then(Response => response.text())
+        .then(text =>{
+            document.getElementById('fileContent').textContent = text;
+        })
+        .catch(error =>{
+            document.getElementById('fileContent').textContent = "Failed to Load File: " +error;
+        });
+    </script>
+</body>   
+</html>
