@@ -1,6 +1,6 @@
 function handleMenuClick(menu) {
     switch(menu) {
-        case 'View TXT File':
+        case 'view txt file':
             window.location.href = 'view-txt.html';
             break;
         default:
