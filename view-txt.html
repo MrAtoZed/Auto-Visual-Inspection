@@ -21,7 +21,7 @@
     <pre id="fileContent">Loading File...</pre>
 
     <script>
-        fetch('data.txt')//nama file txt
+        fetch('english.txt')//nama file txt
         .then(Response => response.text())
         .then(text =>{
             document.getElementById('fileContent').textContent = text;
