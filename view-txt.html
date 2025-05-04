@@ -22,11 +22,11 @@
 
     <script>
         fetch('english.txt')//nama file txt
-        .then(Response => response.text())
-        .then(text =>{
+        .then(response => response.text())
+        .then(text => {
             document.getElementById('fileContent').textContent = text;
         })
-        .catch(error =>{
+        .catch(error => {
             document.getElementById('fileContent').textContent = "Failed to Load File: " +error;
         });
     </script>
