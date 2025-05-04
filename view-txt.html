@@ -10,7 +10,7 @@
         }
         pre {
             background: #f4f4f4;
-            padding: 10;
+            padding: 10px;
             border-radius: 8px;
             white-space: pre-wrap;
         }
@@ -21,7 +21,7 @@
     <pre id="fileContent">Loading File...</pre>
 
     <script>
-        fetch('english.txt')//nama file txt
+        fetch('english.txt')<!--nama file txt-->
         .then(response => response.text())
         .then(text => {
             document.getElementById('fileContent').textContent = text;
